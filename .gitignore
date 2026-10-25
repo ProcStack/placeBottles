@@ -39,3 +39,4 @@ replay_*.log
 *.hprof
 *.jfr
 /reference_pack
+_show/glassShowcase.psd
