@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "placebottles",
+	"version": "${version}",
+	"name": "Place Bottles",
+	"description": "Shift + right-click the top of a block to place bottles as decorations. Potion colors and contents are kept.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.placebottles.PlaceBottles"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

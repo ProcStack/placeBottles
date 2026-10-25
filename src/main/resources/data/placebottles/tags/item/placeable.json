@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:glass_bottle",
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:ominous_bottle",
+    "minecraft:honey_bottle",
+    "minecraft:experience_bottle",
+    "minecraft:dragon_breath"
+  ]
+}

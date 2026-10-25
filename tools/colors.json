@@ -1,0 +1,10 @@
+{
+  "_comment": "Edit these colors (#RRGGBB) then run: python tools/build_assets.py. Real potions (water, awkward, healing, custom colors, ...) always use the color the game computes for that potion; the *_default entries are only fallbacks when a potion item has no potion data.",
+  "potion_default": "#385DC6",
+  "splash_potion_default": "#385DC6",
+  "lingering_potion_default": "#385DC6",
+  "ominous_bottle": "#1F6F78",
+  "honey_bottle": "#E9A41B",
+  "experience_bottle": "#7FE632",
+  "dragon_breath": "#C23CE6"
+}
