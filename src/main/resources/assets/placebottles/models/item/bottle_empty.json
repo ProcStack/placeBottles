@@ -1,230 +1,57 @@
 {
-  "textures": {
-    "glass": "placebottles:item/glass",
-    "liquid": "placebottles:item/liquid",
-    "particle": "placebottles:item/glass"
-  },
-  "elements": [
-    {
-      "name": "body",
-      "from": [
-        5,
-        0,
-        5
-      ],
-      "to": [
-        11,
-        6,
-        11
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "west": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        }
-      }
-    },
-    {
-      "name": "neck",
-      "from": [
-        6.5,
-        6,
-        6.5
-      ],
-      "to": [
-        9.5,
-        8,
-        9.5
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "west": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        }
-      }
-    },
-    {
-      "name": "rim",
-      "from": [
-        6,
-        8,
-        6
-      ],
-      "to": [
-        10,
-        9,
-        10
-      ],
-      "faces": {
-        "north": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "east": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "south": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "west": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        },
-        "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#glass"
-        }
-      }
-    }
-  ],
-  "display": {
-    "gui": {
-      "rotation": [
-        30,
-        225,
-        0
-      ],
-      "scale": [
-        1.2,
-        1.2,
-        1.2
-      ]
-    }
-  }
+	"format_version": "26.3",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "placebottles:item/glass",
+		"glass": "placebottles:item/glass",
+		"glassside": "placebottles:item/glass_side",
+		"glassbottom": "placebottles:item/glass_bottom",
+		"stopper": "placebottles:item/stopper"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"east": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"south": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"west": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#glass"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#glassbottom"}
+			}
+		},
+		{
+			"name": "neck",
+			"from": [6.5, 6, 6.5],
+			"to": [9.5, 8, 9.5],
+			"faces": {
+				"north": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"east": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"south": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"west": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#glass"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "stopper",
+			"from": [6, 8, 6],
+			"to": [10, 9, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 3], "texture": "#stopper"},
+				"east": {"uv": [0, 3, 8, 6], "texture": "#stopper"},
+				"south": {"uv": [8, 3, 16, 6], "texture": "#stopper"},
+				"west": {"uv": [8, 0, 16, 3], "texture": "#stopper"},
+				"up": {"uv": [0, 6, 10, 16], "texture": "#stopper"},
+				"down": {"uv": [10, 6, 16, 12], "texture": "#stopper"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0]
+		}
+	}
 }

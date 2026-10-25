@@ -103,7 +103,7 @@ public class PlaceBottles implements ModInitializer {
 		ItemStack shown = stack.copy();
 		Identifier id = BuiltInRegistries.ITEM.getKey(stack.getItem());
 		if (id.getNamespace().equals("minecraft") && MODELLED.contains(id.getPath())
-				&& !shown.has(DataComponents.ITEM_MODEL)) {
+				&& id.equals(shown.get(DataComponents.ITEM_MODEL))) {
 			shown.set(DataComponents.ITEM_MODEL, Identifier.fromNamespaceAndPath(MOD_ID, id.getPath()));
 		}
 
@@ -155,7 +155,7 @@ public class PlaceBottles implements ModInitializer {
 			ItemStack stack = display.getSlot(0).get().copy();
 			Identifier model = stack.get(DataComponents.ITEM_MODEL);
 			if (model != null && model.getNamespace().equals(MOD_ID)) {
-				stack.remove(DataComponents.ITEM_MODEL);
+				stack.set(DataComponents.ITEM_MODEL, stack.getItem().components().get(DataComponents.ITEM_MODEL));
 			}
 			if (drop && !stack.isEmpty()) {
 				level.addFreshEntity(new ItemEntity(level, hitbox.getX(), hitbox.getY() + 0.1, hitbox.getZ(), stack));

@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "placebottles:item/flask_full",
+    "model": "placebottles:item/bottle_splash",
     "tints": [
       {
         "type": "minecraft:potion",

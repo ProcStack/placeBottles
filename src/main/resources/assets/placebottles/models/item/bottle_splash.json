@@ -1,0 +1,73 @@
+{
+	"format_version": "26.3",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "placebottles:item/glass",
+		"glass": "placebottles:item/glass",
+		"glassside": "placebottles:item/glass_side",
+		"glassbottom": "placebottles:item/glass_bottom",
+		"liquid": "placebottles:item/liquid",
+		"stopper": "placebottles:item/stopper"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [5, 0, 5],
+			"to": [11, 5, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"east": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"south": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"west": {"uv": [0, 0, 12, 12], "texture": "#glassside"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#glass"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#glassbottom"}
+			}
+		},
+		{
+			"name": "neck",
+			"from": [5.5, 5, 7.5],
+			"to": [8.5, 6, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1, -1, 1]},
+			"faces": {
+				"north": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"east": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"south": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"west": {"uv": [0, 12, 12, 16], "texture": "#glass"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#glass"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "stopper",
+			"from": [4.5, 6, 7],
+			"to": [9, 7.1, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-1.5, -2, 1]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 3], "texture": "#stopper"},
+				"east": {"uv": [0, 3, 8, 6], "texture": "#stopper"},
+				"south": {"uv": [8, 3, 16, 6], "texture": "#stopper"},
+				"west": {"uv": [8, 0, 16, 3], "texture": "#stopper"},
+				"up": {"uv": [0, 6, 10, 16], "texture": "#stopper"},
+				"down": {"uv": [10, 6, 16, 12], "texture": "#stopper"}
+			}
+		},
+		{
+			"name": "liquid",
+			"from": [5.5, 0.5, 5.5],
+			"to": [10.5, 4, 10.5],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"up": {"uv": [8, 0, 16, 9], "texture": "#liquid", "tintindex": 0},
+				"down": {"uv": [8, 9, 16, 16], "texture": "#liquid", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0]
+		}
+	}
+}

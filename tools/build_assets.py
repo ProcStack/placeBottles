@@ -12,6 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "src" / "main" / "resources" / "assets" / "placebottles"
 
+print("stopping - see script before running this script")
+exit()
 
 def signed_argb(hex_color: str) -> int:
     value = 0xFF000000 | int(hex_color.lstrip("#"), 16)
@@ -65,18 +67,18 @@ def write_models() -> None:
         "bottle_empty": [
             box("body", [5, 0, 5], [11, 6, 11], glass),
             box("neck", [6.5, 6, 6.5], [9.5, 8, 9.5], glass),
-            box("rim", [6, 8, 6], [10, 9, 10], glass),
+            box("stopper", [6, 8, 6], [10, 9, 10], glass),
         ],
         "bottle_full": [
             box("body", [5, 0, 5], [11, 6, 11], glass),
             box("neck", [6.5, 6, 6.5], [9.5, 8, 9.5], glass),
-            box("rim", [6, 8, 6], [10, 9, 10], glass),
+            box("stopper", [6, 8, 6], [10, 9, 10], glass),
             box("liquid", [5.5, 0.5, 5.5], [10.5, 5, 10.5], liquid, 0),
         ],
         "flask_full": [
             box("body", [4, 0, 4], [12, 7, 12], glass),
             box("neck", [6.5, 7, 6.5], [9.5, 10, 9.5], glass),
-            box("rim", [6, 10, 6], [10, 11, 10], glass),
+            box("stopper", [6, 10, 6], [10, 11, 10], glass),
             box("liquid", [4.5, 0.5, 4.5], [11.5, 6, 11.5], liquid, 0),
         ],
     }
