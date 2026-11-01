@@ -1,0 +1,88 @@
+{
+	"format_version": "26.3",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"liquid": "placebottles:item/liquid",
+		"stopper": "placebottles:item/stopper",
+		"glass": "placebottles:item/glass",
+		"particle": "placebottles:item/glass_sideBottom",
+		"glasssidebottom": "placebottles:item/glass_sideBottom"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [4.75, 0, 4.75],
+			"to": [11.25, 6.75, 11.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.75, 0, 0.75]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"east": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#glass"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#glasssidebottom"}
+			}
+		},
+		{
+			"name": "neck",
+			"from": [6.5, 6.75, 6.5],
+			"to": [9.5, 9.75, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.25, 0]},
+			"faces": {
+				"north": {"uv": [11, 11, 16, 16], "texture": "#glass"},
+				"east": {"uv": [11, 11, 16, 16], "texture": "#glass"},
+				"south": {"uv": [11, 11, 16, 16], "texture": "#glass"},
+				"west": {"uv": [11, 11, 16, 16], "texture": "#glass"},
+				"up": {"uv": [8, 0, 14, 6], "texture": "#glass"},
+				"down": {"uv": [0, 8, 3, 11], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "stopper",
+			"from": [7, 11, 7],
+			"to": [9, 12, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.25, 3, -0.25]},
+			"faces": {
+				"north": {"uv": [1, 0, 5, 1], "texture": "#stopper"},
+				"east": {"uv": [1, 2, 5, 3], "texture": "#stopper"},
+				"south": {"uv": [9, 2, 12, 3], "texture": "#stopper"},
+				"west": {"uv": [9, 0, 12, 1], "texture": "#stopper"},
+				"up": {"uv": [13, 10, 16, 13], "texture": "#stopper"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#stopper"}
+			}
+		},
+		{
+			"name": "stopperBase",
+			"from": [6, 9.5, 6],
+			"to": [10, 11, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-0.25, 1.5, -0.25]},
+			"faces": {
+				"north": {"uv": [1, 0, 7, 2], "texture": "#stopper"},
+				"east": {"uv": [1, 2, 7, 4], "texture": "#stopper"},
+				"south": {"uv": [9, 2, 15, 4], "texture": "#stopper"},
+				"west": {"uv": [9, 0, 15, 2], "texture": "#stopper"},
+				"up": {"uv": [8, 4, 14, 10], "texture": "#stopper"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#stopper"}
+			}
+		},
+		{
+			"name": "liquid",
+			"from": [5.75, 0.5, 5.75],
+			"to": [10.25, 5, 10.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.25, 0, 1.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#liquid", "tintindex": 0},
+				"up": {"uv": [8, 0, 16, 9], "texture": "#liquid", "tintindex": 0},
+				"down": {"uv": [8, 9, 16, 16], "texture": "#liquid", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0]
+		}
+	}
+}

@@ -91,7 +91,9 @@ public class PlaceBottles implements ModInitializer {
 			return InteractionResult.FAIL;
 		}
 
-		spawnBottle(level, x, y, z, held.copyWithCount(1));
+		// Face the placing player, snapped to 45 degree steps for consistent placement.
+		float yaw = Math.round((player.getYRot() + 180.0f) / 15.0f) * 15.0f;
+		spawnBottle(level, x, y, z, yaw, held.copyWithCount(1));
 		level.playSound(null, x, y, z, SoundEvents.BOTTLE_EMPTY, SoundSource.BLOCKS, 1.0f, 1.0f);
 		if (!player.getAbilities().instabuild) {
 			held.shrink(1);
@@ -99,7 +101,7 @@ public class PlaceBottles implements ModInitializer {
 		return InteractionResult.SUCCESS;
 	}
 
-	private void spawnBottle(Level level, double x, double y, double z, ItemStack stack) {
+	private void spawnBottle(Level level, double x, double y, double z, float yaw, ItemStack stack) {
 		ItemStack shown = stack.copy();
 		Identifier id = BuiltInRegistries.ITEM.getKey(stack.getItem());
 		if (id.getNamespace().equals("minecraft") && MODELLED.contains(id.getPath())
@@ -110,7 +112,7 @@ public class PlaceBottles implements ModInitializer {
 		// The model's origin is its center, so lift the display by half a block.
 		Display.ItemDisplay display = EntityTypes.ITEM_DISPLAY.create(level, EntitySpawnReason.COMMAND);
 		display.setPos(x, y + 0.5, z);
-		display.setYRot(level.getRandom().nextFloat() * 360.0f);
+		display.setYRot(yaw);
 		display.addTag(DISPLAY_TAG);
 		display.getSlot(0).set(shown);
 		level.addFreshEntity(display);

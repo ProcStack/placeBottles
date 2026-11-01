@@ -1,0 +1,85 @@
+{
+	"format_version": "26.3",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "placebottles:item/glass",
+		"glass": "placebottles:item/glass",
+		"glasssidebottom": "placebottles:item/glass_sideBottom",
+		"gas": "placebottles:item/gas",
+		"stopper": "placebottles:item/stopper"
+	},
+	"elements": [
+		{
+			"name": "body",
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"east": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"west": {"uv": [0, 0, 8, 8], "texture": "#glasssidebottom"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#glass"},
+				"down": {"uv": [8, 0, 16, 8], "texture": "#glasssidebottom"}
+			}
+		},
+		{
+			"name": "neck",
+			"from": [6.5, 6, 6.5],
+			"to": [9.5, 8, 9.5],
+			"faces": {
+				"north": {"uv": [7, 11, 11, 14], "texture": "#glass"},
+				"east": {"uv": [7, 11, 11, 14], "texture": "#glass"},
+				"south": {"uv": [7, 11, 11, 14], "texture": "#glass"},
+				"west": {"uv": [7, 11, 11, 14], "texture": "#glass"},
+				"up": {"uv": [0, 0, 10, 10], "texture": "#glass"},
+				"down": {"uv": [11, 0, 16, 5], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "stopper",
+			"from": [6, 8, 6],
+			"to": [10, 9, 10],
+			"faces": {
+				"north": {"uv": [1, 0, 6, 2], "texture": "#stopper"},
+				"east": {"uv": [1, 2, 6, 4], "texture": "#stopper"},
+				"south": {"uv": [8, 2, 13, 4], "texture": "#stopper"},
+				"west": {"uv": [8, 0, 13, 2], "texture": "#stopper"},
+				"up": {"uv": [8, 10, 13, 15], "texture": "#stopper"},
+				"down": {"uv": [0, 12, 4, 16], "texture": "#stopper"}
+			}
+		},
+		{
+			"name": "gasBody",
+			"from": [5.75, 0.75, 5.75],
+			"to": [10.25, 5.25, 10.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.25, 0.25, 0.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#gas", "tintindex": 0},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#gas", "tintindex": 0},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#gas", "tintindex": 0},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#gas", "tintindex": 0},
+				"up": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"down": {"uv": [8, 9, 16, 16], "texture": "#gas", "tintindex": 0}
+			}
+		},
+		{
+			"name": "gasNeck",
+			"from": [7, 5.25, 7],
+			"to": [9, 8, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.5, 5.75, 1.5]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"east": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"south": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"west": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"up": {"uv": [8, 0, 16, 5], "texture": "#gas", "tintindex": 0},
+				"down": {"uv": [8, 5, 16, 9], "texture": "#gas", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0]
+		}
+	}
+}
